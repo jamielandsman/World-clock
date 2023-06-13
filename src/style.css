@@ -49,11 +49,9 @@ h1 {
 
 .cityDisplay {
   padding: 10px;
-  display: flex;
   color: black;
   border-bottom: 1px dashed;
   border-color: gray;
-  justify-content: space-between;
 }
 
 .cityDisplay:last-child {
@@ -71,6 +69,11 @@ h1 {
   font-size: 30px;
   font-weight: 300;
 }
+
+.smaller {
+  font-size: 20px;
+}
+
 footer,
 a {
   font-size: 18px;
