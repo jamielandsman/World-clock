@@ -50,7 +50,7 @@ h1 {
 .cityDisplay {
   padding: 10px;
   display: flex;
-  color: gray;
+  color: black;
   border-bottom: 1px dashed;
   border-color: gray;
   justify-content: space-between;
@@ -75,7 +75,7 @@ footer,
 a {
   font-size: 18px;
   color: black;
-  font-weight: lighter;
+  font-weight: bold;
   padding: 0px;
   margin: 0 auto;
   text-align: center;
