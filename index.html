@@ -4,17 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <title>World Clock</title>
   </head>
-  <body>
-    <h1>World Clock</h1>
+  <div class="overlay">
+    <body>
+      <div class="timebox">
+        <h1>🌎 World Clock 🌎</h1>
+        <div class="container">
+          <div class="row search">
+            <select
+              class="form-select form-select-sm"
+              aria-label="citySelector"
+              autofocus="on"
+            >
+              <option selected>Select a City...</option>
+              <option value="current">My Current Location</option>
+              <option value="sydney">Sydney, AU</option>
+              <option value="tokyo">Tokyo, JP</option>
+              <option value="la">Los Angeles, US</option>
+            </select>
+          </div>
 
-    <footer>
-      Open Source project by
-      <a href="https://github.com/jamielandsman/Weather-App" target="_blank"
-        >Jamie Landsman</a
-      >
-    </footer>
-    <script src="src/index.js"></script>
-  </body>
+          <div class="row cityDisplay">
+            <div class="col city">
+              🇺🇸 New York <br />
+              <span class="date">June 14, 2023</span>
+            </div>
+            <div class="col time">1:00pm</div>
+          </div>
+          <div class="rowHome"></div>
+          <div class="row cityDisplay">
+            <div class="col city">
+              🇬🇧 London <br /><span class="date">June 14, 2023</span>
+            </div>
+            <div class="col time">1:00pm</div>
+          </div>
+          <div class="rowHome"></div>
+          <div class="row cityDisplay">
+            <div class="col city">
+              🇫🇷 Paris <br />
+              <span class="date">June 14, 2023</span>
+            </div>
+            <div class="col time">1:00pm</div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        Open Source project by
+        <a href="https://github.com/jamielandsman/World-clock" target="_blank"
+          >Jamie Landsman</a
+        >
+      </footer>
+
+      <script src="src/index.js"></script>
+    </body>
+  </div>
 </html>
