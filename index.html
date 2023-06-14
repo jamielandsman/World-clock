@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <link
       rel="stylesheet"
@@ -30,34 +32,29 @@
             >
               <option selected>Select a City...</option>
               <option value="current">My Current Location</option>
-              <option value="sydney">Sydney, AU</option>
-              <option value="tokyo">Tokyo, JP</option>
-              <option value="la">Los Angeles, US</option>
+              <option value="Australia/Sydney">Sydney, AU</option>
+              <option value="America/Chicago">Chicago, US</option>
+              <option value="Europe/Paris">Paris, FR</option>
             </select>
           </div>
 
           <div class="row cityDisplay">
-            <div class="col city">🇺🇸 New York</div>
-            <div class="col time">
-              1:00<span class="smaller">pm</span>
-              <span class="date">June 14, 2023</span>
-            </div>
+            <div class="col city" id="newYork"></div>
+            <div class="col time" id="nYTime"></div>
+            <span class="date" id="nYDate"></span>
           </div>
 
-          <div class="row cityDisplay">
-            <div class="col city">🇫🇷 Paris</div>
-            <div class="col time">
-              1:00<span class="smaller">pm</span>
-              <span class="date">June 14, 2023</span>
-            </div>
+         <div class="row cityDisplay">
+            <div class="col city" id="lA"></div>
+            <div class="col time" id="laTime"></div>
+            <span class="date" id="laDate"></span>
+          </div>
+   <div class="row cityDisplay">
+            <div class="col city" id="tokyo"></div>
+            <div class="col time" id="tokyoTime"></div>
+            <span class="date" id="tokyoDate"></span>
           </div>
 
-          <div class="row cityDisplay">
-            <div class="col city">🇹🇭 Bangkok</div>
-            <div class="col time">
-              1:00<span class="smaller">pm</span>
-              <span class="date">June 14, 2023</span>
-            </div>
           </div>
         </div>
       </div>

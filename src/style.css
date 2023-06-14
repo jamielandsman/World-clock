@@ -34,6 +34,7 @@ h1 {
   font-weight: 300;
   color: gray;
   font-style: italic;
+  text-align: right;
 }
 .timebox {
   margin: 10% auto;
