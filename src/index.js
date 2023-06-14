@@ -64,8 +64,7 @@ function updateCity(event) {
 }
 
 function updateSelectedCity() {
-  if (!selectedCity) alert("Please select a city.");
-  return;
+  if (!selectedCity) return;
 
   let cityName = selectedCity.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(selectedCity);
