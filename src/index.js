@@ -76,7 +76,7 @@ function updateSelectedCity() {
             <div class="col time">${cityTime.format("h:mm:ss A")}</div>
             <span class="date">${cityTime.format("dddd, MMMM DD, YYYY")}</span>
           </div>
-    </div> <a href="index.html">All cities</a>
+    </div> <a href="/">All cities</a>
   `;
 }
 
