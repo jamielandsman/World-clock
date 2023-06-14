@@ -58,6 +58,9 @@ let selectedCity = null;
 
 function updateCity(event) {
   selectedCity = event.target.value;
+  if (selectedCity === "current") {
+    selectedCity = moment.tz.guess();
+  }
 }
 
 function updateSelectedCity() {
