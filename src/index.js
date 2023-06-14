@@ -82,7 +82,7 @@ function updateSelectedCity() {
     </div> <a href="/">all cities</a>
   `;
   if (selectedCity === "select") {
-    citiesElement.innerHTML = "Please select a city";
+    citiesElement.innerHTML = "Please select a city from ☝️";
   }
 }
 
