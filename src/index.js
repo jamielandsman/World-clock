@@ -61,6 +61,9 @@ function updateCity(event) {
   if (selectedCity === "current") {
     selectedCity = moment.tz.guess();
   }
+  if (selectedCity === "select") {
+    alert("please select a city in the drop down");
+  }
 }
 
 function updateSelectedCity() {
@@ -78,6 +81,9 @@ function updateSelectedCity() {
           </div>
     </div> <a href="/">all cities</a>
   `;
+  if (selectedCity === "select") {
+    citiesElement.innerHTML = "Please select a city";
+  }
 }
 
 function selectDropDown() {
